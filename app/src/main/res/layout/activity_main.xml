@@ -9,37 +9,30 @@
 
     <EditText
         android:id="@+id/nome"
-        android:layout_width="match_parent"
+        android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/resposta"
-        android:layout_marginBottom="229dp"
+        android:layout_marginBottom="244dp"
         android:hint="Nome"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/peso"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imagem"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="497dp"
         android:hint="Peso"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/altura"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/peso"
-        android:layout_marginBottom="-74dp"
+        android:layout_marginBottom="-68dp"
         android:hint="Altura"
         android:inputType="number" />
-
-    <ImageView
-        android:id="@+id/imagem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/calcular"
-        android:layout_marginTop="310dp" />
 
     <Button
         android:id="@+id/calcular"
@@ -51,8 +44,15 @@
     <TextView
         android:id="@+id/resposta"
         android:layout_width="401dp"
-        android:layout_height="45dp"
+        android:layout_height="71dp"
         android:layout_below="@id/imagem"
-        android:layout_marginTop="-53dp" />
+        android:layout_marginTop="-400dp" />
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="391dp"
+        android:layout_height="288dp"
+        android:layout_below="@id/calcular"
+        android:layout_marginTop="353dp" />
 
 </RelativeLayout>

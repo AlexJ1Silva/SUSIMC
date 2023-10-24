@@ -37,7 +37,7 @@ import androidx.appcompat.app.AppCompatActivity;
         }
 
         private void calcular() {
-            
+
             String nome = nomeEditText.getText().toString();
             double peso = Double.parseDouble(pesoEditText.getText().toString());
             double altura = Double.parseDouble(alturaEditText.getText().toString());
