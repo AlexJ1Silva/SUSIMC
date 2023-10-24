@@ -112,7 +112,7 @@ import androidx.appcompat.app.AppCompatActivity;
                 }
             }
         }
-        
+
         // função para limpar os campos
         private void limparDados() {
             nomeEditText.setText("");  // limpa o campo de nome

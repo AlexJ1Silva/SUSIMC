@@ -2,17 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="11dp" />
 
     <EditText
         android:id="@+id/nome"
-        android:layout_width="317dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/peso"
-        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@+id/resposta"
+        android:layout_marginTop="-299dp"
         android:hint="Nome"
         android:inputType="text" />
 
@@ -20,8 +28,8 @@
         android:id="@+id/peso"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imagem"
-        android:layout_marginBottom="502dp"
+        android:layout_below="@+id/resposta"
+        android:layout_marginTop="-212dp"
         android:hint="Peso"
         android:inputType="number" />
 
@@ -29,43 +37,44 @@
         android:id="@+id/altura"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/peso"
-        android:layout_marginBottom="-65dp"
+        android:layout_below="@+id/resposta"
+        android:layout_alignEnd="@+id/limpar"
+        android:layout_marginTop="-212dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="-52dp"
         android:hint="Altura"
         android:inputType="numberDecimal"
-        android:maxLength="4"/>
-
-    <Button
-        android:id="@+id/calcular"
-        android:layout_width="149dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Calcular" />
-
-    <TextView
-        android:id="@+id/resposta"
-        android:layout_width="401dp"
-        android:layout_height="71dp"
-        android:layout_alignTop="@+id/resposta"
-        android:layout_alignBottom="@+id/altura"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="-180dp" />
-
-    <ImageView
-        android:id="@+id/imagem"
-        android:layout_width="391dp"
-        android:layout_height="288dp"
-        android:layout_below="@id/calcular"
-        android:layout_marginTop="416dp" />
+        android:maxLength="4" />
 
     <Button
         android:id="@+id/limpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resposta"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="271dp"
+        android:layout_marginTop="-134dp"
+        android:text="Limpar" />
+
+    <TextView
+        android:id="@+id/resposta"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignTop="@+id/imagem"
+        android:layout_marginTop="-27dp" />
+
+    <Button
+        android:id="@+id/calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/resposta"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="142dp"
-        android:layout_marginBottom="10dp"
-        android:text="Limpar" />
+        android:layout_below="@+id/resposta"
+        android:layout_marginTop="-136dp"
+        android:text="Calcular" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/susimc2" />
 
 </RelativeLayout>
