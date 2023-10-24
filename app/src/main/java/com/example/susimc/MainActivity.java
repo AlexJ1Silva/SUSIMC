@@ -37,15 +37,20 @@ import androidx.appcompat.app.AppCompatActivity;
         }
 
         private void calcular() {
-
             String nome = nomeEditText.getText().toString();
             double peso = Double.parseDouble(pesoEditText.getText().toString());
             double altura = Double.parseDouble(alturaEditText.getText().toString());
             double imc = peso / (altura * altura);
 
             if (nome.isEmpty()) {
+                respostaTextView.setTextColor(getResources().getColor(R.color.red));
                 respostaTextView.setText("[ERRO] Você não colocou o seu nome!");
-            } else if (imc < 16) {
+
+            }else if (peso == 0){
+                respostaTextView.setText("[ERRO] Você não colocou o seu peso!");
+            }else if (altura == 0){
+                respostaTextView.setText("[ERRO] Você não colocou a sua altura!");
+            }else if (imc < 16) {
                 respostaTextView.setText(nome + " Seu imc é " + String.format("%.2f", imc) + " você está no grau magreza III.");
                 img.setImageResource(R.drawable.magreza3);
                 getWindow().getDecorView().setBackgroundColor(getResources().getColor(R.color.colorMagreza3));
@@ -79,5 +84,16 @@ import androidx.appcompat.app.AppCompatActivity;
                 getWindow().getDecorView().setBackgroundColor(getResources().getColor(R.color.colorObesidade3));
             }
         }
+        private void limpar(){
+            String nome = "";
+            double peso = 0;
+            double altura = 0;
+            double imc = 0;
+            String respostaTextView = "";
+
+        }
+
     }
+
+
 
