@@ -32,7 +32,8 @@
         android:layout_alignBottom="@+id/peso"
         android:layout_marginBottom="-65dp"
         android:hint="Altura"
-        android:inputType="number" />
+        android:inputType="numberDecimal"
+        android:maxLength="4"/>
 
     <Button
         android:id="@+id/calcular"
